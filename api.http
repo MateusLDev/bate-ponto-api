@@ -1,0 +1,63 @@
+GET http://localhost:3333/points
+
+###
+
+POST http://localhost:3333/point
+Content-Type: application/json
+
+{
+  "date": "19/0/2024",
+  "activities": [
+    {
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "description": "Refatorando componente",
+      "category": "Tarefa"
+    },
+    {
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "description": "Refatorando fluxo de login",
+      "category": "Tarefa"
+    },
+    {
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "description": "Almoço",
+      "category": "Intervalo"
+    }
+  ]
+}
+
+###
+
+PUT  http://localhost:3333/points/fa2aa24c-3839-4470-aab1-b592b1a0230c
+Content-Type: application/json
+
+{
+  "date": "19/0/2024",
+  "activities": [
+    {
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "description": "Refatorando componente",
+      "category": "Tarefa"
+    },
+    {
+      "startTime": "11:00",
+      "endTime": "13:00",
+      "description": "Refatorando fluxo de login",
+      "category": "Tarefa"
+    },
+    {
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "description": "Almoço",
+      "category": "Intervalo"
+    }
+  ]
+}
+
+###
+
+DELETE  http://localhost:3333/point/fa2aa24c-3839-4470-aab1-b592b1a0230c
