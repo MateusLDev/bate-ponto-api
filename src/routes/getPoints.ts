@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { ZodTypeProvider } from "fastify-type-provider-zod";
 import { z } from "zod";
 
-import { db, uploadProcessedData } from "../lib/firebase";
+import { db } from "../lib/firebase";
 import { collection, query, getDocs } from "firebase/firestore";
 import { Points } from "../types/api";
 

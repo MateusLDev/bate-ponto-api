@@ -1,4 +1,4 @@
-GET http://localhost:3333/points
+GET https://bate-ponto-api.onrender.com/points
 
 ###
 
