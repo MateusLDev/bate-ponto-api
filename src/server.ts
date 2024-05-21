@@ -13,21 +13,21 @@ import { deletePoint } from "./routes/deletePoint";
 
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
+import { getPointById } from "./routes/getPointById";
 
 const app = fastify();
 
-app.register(fastifySwagger,
-  {
-    swagger: {
-      info: {
-        title: "bateponto-api",
-        description: "Especificações da API para o back-end da aplicação Bate Ponto",
-        version: "1.0.0",
-      },
+app.register(fastifySwagger, {
+  swagger: {
+    info: {
+      title: "bateponto-api",
+      description:
+        "Especificações da API para o back-end da aplicação Bate Ponto",
+      version: "1.0.0",
     },
-    transform: jsonSchemaTransform,
-  }
-)
+  },
+  transform: jsonSchemaTransform,
+});
 
 app.register(fastifySwaggerUi, {
   routePrefix: "/documentation",
@@ -37,9 +37,10 @@ app.setValidatorCompiler(validatorCompiler);
 app.setSerializerCompiler(serializerCompiler);
 
 app.register(getPoints);
+app.register(getPointById);
 app.register(createPoint);
 app.register(updatePoints);
-app.register(deletePoint)
+app.register(deletePoint);
 
 app.listen({ port: 3333 }).then(() => {
   console.log("Server running");

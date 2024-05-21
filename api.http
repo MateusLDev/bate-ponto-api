@@ -1,4 +1,9 @@
-GET https://bate-ponto-api.onrender.com/points
+# GET https://bate-ponto-api.onrender.com/points
+GET http://localhost:3333/points
+
+###
+
+GET http://localhost:3333/point/9dc2ae07-a9ed-4841-864b-e27c4eb21ca4
 
 ###
 
@@ -6,7 +11,7 @@ POST http://localhost:3333/point
 Content-Type: application/json
 
 {
-  "date": "19/0/2024",
+  "date": "19/02/2024",
   "activities": [
     {
       "startTime": "10:00",
@@ -31,11 +36,11 @@ Content-Type: application/json
 
 ###
 
-PUT  http://localhost:3333/points/fa2aa24c-3839-4470-aab1-b592b1a0230c
+PUT  http://localhost:3333/points/2dee5487-0f2d-4efc-93b5-ec8e8426c07b
 Content-Type: application/json
 
 {
-  "date": "19/0/2024",
+  "date": "20/20/2024",
   "activities": [
     {
       "startTime": "10:00",
@@ -60,4 +65,4 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://localhost:3333/point/fa2aa24c-3839-4470-aab1-b592b1a0230c
+DELETE  http://localhost:3333/point/2dee5487-0f2d-4efc-93b5-ec8e8426c07b
