@@ -30,13 +30,13 @@ Content-Type: application/json
       "endTime": "14:00",
       "description": "Almoço",
       "category": "Intervalo"
-    }
+    },
   ]
 }
 
 ###
 
-PUT  http://localhost:3333/points/2dee5487-0f2d-4efc-93b5-ec8e8426c07b
+PUT  http://localhost:3333/points/9dc2ae07-a9ed-4841-864b-e27c4eb21ca4
 Content-Type: application/json
 
 {
@@ -58,6 +58,12 @@ Content-Type: application/json
       "startTime": "13:00",
       "endTime": "14:00",
       "description": "Almoço",
+      "category": "Intervalo"
+    },
+    {
+      "startTime": "17:00",
+      "endTime": "18:37",
+      "description": "Lanche",
       "category": "Intervalo"
     }
   ]
